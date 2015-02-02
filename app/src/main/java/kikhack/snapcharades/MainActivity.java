@@ -117,6 +117,10 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             Intent intent = new Intent(this, EditFriendsActivity.class);
             startActivity(intent);
         }
+        else if(itemId == R.id.action_camera){
+            Intent intent = new Intent(this, CameraActivity.class);
+            startActivity(intent);
+        }
 
         return super.onOptionsItemSelected(item);
     }

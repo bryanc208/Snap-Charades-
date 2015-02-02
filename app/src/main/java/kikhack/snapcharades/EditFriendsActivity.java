@@ -2,15 +2,23 @@ package kikhack.snapcharades;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
+<<<<<<< HEAD
+=======
+import android.support.v7.app.ActionBarActivity;
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+<<<<<<< HEAD
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+=======
+import android.widget.ListView;
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -36,6 +44,7 @@ public class EditFriendsActivity extends ListActivity {
         setContentView(R.layout.activity_edit_friends);
 
         getListView().setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+<<<<<<< HEAD
         Button doneBtn = (Button) findViewById(R.id.addFriendDone);
         doneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +52,8 @@ public class EditFriendsActivity extends ListActivity {
                 finish();
             }
         });
+=======
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 
     }
 
@@ -115,20 +126,31 @@ public class EditFriendsActivity extends ListActivity {
         super.onListItemClick(l, v, position, id);
 
         if (getListView().isItemChecked(position)) {
+<<<<<<< HEAD
+=======
+
+        } else {
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
             mRelation.add(mUsers.get(position));
             mCurrentUser.saveInBackground(new SaveCallback() {
                 @Override
                 public void done(ParseException e) {
                     if (e == null) {
                         // Success
+<<<<<<< HEAD
                         Toast.makeText(getApplicationContext(), "Friend Successfully Added!", Toast.LENGTH_SHORT).show();
+=======
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
                     } else {
                         Log.e(TAG, e.getMessage());
                     }
                 }
             });
+<<<<<<< HEAD
         } else {
 
+=======
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
         }
     }
 

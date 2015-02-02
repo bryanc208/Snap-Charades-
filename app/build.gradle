@@ -20,9 +20,15 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile fileTree(include: 'Parse-*.jar', dir: 'libs')
     compile files('src/main/java/kikhack/Libraries/commons-io-2.4.jar')
     compile files('libs/picasso-2.4.0.jar')
+=======
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 }

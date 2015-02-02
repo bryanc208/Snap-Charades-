@@ -1,5 +1,6 @@
 package kikhack.snapcharades;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,20 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+=======
+import java.util.Locale;
+
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.os.Bundle;
+import android.support.v4.view.ViewPager;
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -19,12 +34,18 @@ import android.view.ViewGroup;
 
 import com.parse.ParseUser;
 
+<<<<<<< HEAD
 import java.util.Locale;
 
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
 
 
+=======
+
+public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
+
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
     public static final String TAG = MainActivity.class.getSimpleName();
 
     /**
@@ -43,6 +64,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     ViewPager mViewPager;
 
     @Override
+<<<<<<< HEAD
     protected void onResume() {
         super.onResume();
 
@@ -67,12 +89,26 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             startActivity(recipientIntent);
 
         }
+=======
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        ParseUser currentUser = ParseUser.getCurrentUser();
+        if(currentUser == null){
+            navigateToLogin();
+        }else{
+            Log.i(TAG, currentUser.getUsername());
+        }
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
@@ -104,6 +140,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         }
     }
 
+<<<<<<< HEAD
     protected boolean checkPhoto() {
 
         Intent intent = getIntent();
@@ -116,6 +153,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         return false;
     }
 
+=======
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
     private void navigateToLogin() {
         Intent intent = new Intent(this, LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -139,6 +178,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         int itemId = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+<<<<<<< HEAD
         if (itemId == R.id.action_logout) {
             ParseUser.logOut();
             navigateToLogin();
@@ -151,6 +191,18 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         } else if (itemId == R.id.action_refresh) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+=======
+        if (itemId == R.id.action_logout){
+            ParseUser.logOut();
+            navigateToLogin();
+        }else if(itemId == R.id.action_edit_friends){
+            Intent intent = new Intent(this, EditFriendsActivity.class);
+            startActivity(intent);
+        }
+        else if(itemId == R.id.action_camera){
+            Intent intent = new Intent(this, CameraActivity.class);
+            startActivity(intent);
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
         }
 
         return super.onOptionsItemSelected(item);
@@ -172,6 +224,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     }
 
     /**
+<<<<<<< HEAD
      * A placeholder fragment containing a simple view.
      */
     public static class PlaceholderFragment extends Fragment {
@@ -205,6 +258,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     }
 
     /**
+=======
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
@@ -222,7 +277,11 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
 
+<<<<<<< HEAD
             switch (position) {
+=======
+            switch(position){
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
                 case 0:
                     return new InboxFragment();
                 case 1:
@@ -250,4 +309,40 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         }
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * A placeholder fragment containing a simple view.
+     */
+    public static class PlaceholderFragment extends Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static PlaceholderFragment newInstance(int sectionNumber) {
+            PlaceholderFragment fragment = new PlaceholderFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        public PlaceholderFragment() {
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_inbox, container, false);
+            return rootView;
+        }
+    }
+
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 }

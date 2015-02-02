@@ -2,9 +2,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="kikhack.snapcharades.LoginActivity">
+<<<<<<< HEAD
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+=======
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 </menu>

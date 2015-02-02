@@ -2,6 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+<<<<<<< HEAD
         <item name="android:actionBarStyle">@style/ActionBarWithoutTitle</item>
         <!-- Customize your theme here. -->
     </style>
@@ -15,6 +16,12 @@
     </style>
 
     <style name="AppThemeNoActionBar" parent="Theme.AppCompat.NoActionBar">
+=======
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
         <!-- Customize your theme here. -->
     </style>
 </resources>

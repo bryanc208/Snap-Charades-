@@ -1,11 +1,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+=======
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
     android:layout_height="match_parent"
     tools:context=".MainActivity$PlaceholderFragment">
 
 
     <ListView
+<<<<<<< HEAD
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,5 +27,21 @@
         android:gravity="center_vertical|center_horizontal"
         android:text="Currently No Challenges"
         android:textSize="30dp" />
+=======
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@android:id/empty"
+        android:text="@string/empty_inbox_label"/>
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 
 </RelativeLayout>

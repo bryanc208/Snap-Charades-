@@ -1,5 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
     <item
@@ -24,4 +25,14 @@
         android:orderInCategory="100"
         android:title="@string/menu_camera_label"
         app:showAsAction="always" />
+=======
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_logout" android:title="@string/logout_button"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_edit_friends" android:title="@string/edit_friends"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_camera" android:title="@string/menu_camera_label"
+        android:orderInCategory="100" app:showAsAction="always"
+        android:icon="@drawable/ic_action_camera"/>
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 </menu>

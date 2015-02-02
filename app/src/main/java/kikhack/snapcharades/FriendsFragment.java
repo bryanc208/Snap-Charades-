@@ -31,6 +31,7 @@ public class FriendsFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+<<<<<<< HEAD
         View rootView = inflater.inflate(R.layout.fragment_friends, container, false);
 
         return rootView;
@@ -38,6 +39,13 @@ public class FriendsFragment extends ListFragment {
 
     @Override
     public void onResume() {
+=======
+        View rootView = inflater.inflate(R.layout.fragment_inbox, container, false);
+        return rootView;
+    }
+    @Override
+    public void onResume(){
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
         super.onResume();
 
         mCurrentUser = ParseUser.getCurrentUser();
@@ -72,5 +80,9 @@ public class FriendsFragment extends ListFragment {
             }
         });
     }
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719

@@ -26,8 +26,11 @@
     <string name="title_activity_edit_friends">Edit Friends</string>
     <string name="empty_friends_message">Add friends!</string>
     <string name="menu_camera_label">Camera</string>
+<<<<<<< HEAD
     <string name="title_activity_recipients">Recipients</string>
     <string name="SendButton">Send</string>
     <string name="title_activity_new_image">NewImageActivity</string>
+=======
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 
 </resources>

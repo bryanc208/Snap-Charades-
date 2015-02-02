@@ -1,6 +1,11 @@
 <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+=======
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/pager"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
     tools:context=".MainActivity" />

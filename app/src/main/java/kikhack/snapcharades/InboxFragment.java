@@ -1,6 +1,7 @@
 package kikhack.snapcharades;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -18,11 +19,21 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
 import java.util.List;
+=======
+import android.hardware.Camera;
+import android.os.Bundle;
+import android.support.v4.app.ListFragment;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
 
 /**
  * Created by bryancho on 2015-01-31.
  */
 public class InboxFragment extends ListFragment {
+<<<<<<< HEAD
 
     protected List<ParseObject> mMessages;
     protected View rootView;
@@ -90,3 +101,12 @@ public class InboxFragment extends ListFragment {
         }
     }
 }
+=======
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_inbox, container, false);
+        return rootView;
+    }
+}
+>>>>>>> 58fc8ad28b2e65c3b73995196ca84dff70d69719
